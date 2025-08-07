@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0f0f15, #1c1c2e);
+  background-image: 
+    radial-gradient(circle at top left, #2e2e5e33 10%, transparent 30%),
+    radial-gradient(circle at bottom right, #ff5c5c22 10%, transparent 30%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+#tsparticles {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f0f15;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff5c5c;
+  text-shadow: 0 0 8px #ff5c5c;
+  animation: glow 2s infinite alternate;
+}
+
+.content {
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #ff5c5c;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff5c5c, #ff3838);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 92, 92, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 92, 92, 0.7);
+}
+
+#contact {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1a1a25, #232334);
+  text-align: center;
+  animation: slideIn 1.5s ease-in;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#contact p {
+  font-size: 1.1em;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 8px #ff5c5c; }
+  to { text-shadow: 0 0 20px #ff2a2a; }
+}

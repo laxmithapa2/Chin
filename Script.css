@@ -1,0 +1,12 @@
+tsParticles.load("tsparticles", {
+  background: { color: "#0f0f15" },
+  particles: {
+    number: { value: 80 },
+    color: { value: "#ff5c5c" },
+    size: { value: 2 },
+    move: { enable: true, speed: 1 },
+    opacity: { value: 0.5 },
+  }
+});
+
+AOS.init();
